@@ -1,0 +1,42 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x4200b8e1: [0;33mlvgl_port_touchpad_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port_touch.c[0m[0m:[1;31m127[0m
+[0m--- 0x4037dbb7: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x40375f9e: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4037dbc1: [0;33mesp_system_abort[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40385516: [0;33mabort[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037dbb7: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200b8e1: [0;33mlvgl_port_touchpad_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port_touch.c[0m[0m:[1;31m127[0m
+[0m--- 0x4201b2c1: [0;33mindev_read_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/indev/lv_indev.c[0m[0m:[1;31m199[0m
+[0m--- (inlined by) [0;33mlv_indev_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/indev/lv_indev.c[0m[0m:[1;31m243[0m
+[0m--- 0x4201be77: [0;33mlv_indev_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/indev/lv_indev.c[0m[0m:[1;31m231[0m
+[0m--- 0x4200ab60: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m232[0m
+[0m--- 0x40375f20: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m161[0m
+[0m--- 0x4200b8e1: [0;33mlvgl_port_touchpad_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port_touch.c[0m[0m:[1;31m127[0m
+[0m--- 0x4037dbb7: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x40375f9e: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4037dbc1: [0;33mesp_system_abort[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40385516: [0;33mabort[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037dbb7: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200b8e1: [0;33mlvgl_port_touchpad_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port_touch.c[0m[0m:[1;31m127[0m
+[0m--- 0x4201b2c1: [0;33mindev_read_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/indev/lv_indev.c[0m[0m:[1;31m199[0m
+[0m--- (inlined by) [0;33mlv_indev_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/indev/lv_indev.c[0m[0m:[1;31m243[0m
+[0m--- 0x4201be77: [0;33mlv_indev_read[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/indev/lv_indev.c[0m[0m:[1;31m231[0m
+[0m--- 0x4200ab60: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m232[0m
+[0m--- 0x40375f20: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m161[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Users\mark1\esp\v5.2.6\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

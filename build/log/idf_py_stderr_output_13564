@@ -1,0 +1,244 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42027504: [0;33mmapping_search[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m547[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m760[0m
+[0m--- 0x42027927: [0;33mlv_tlsf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m1101[0m
+[0m--- 0x42025a28: [0;33mlv_malloc_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_mem_core_builtin.c[0m[0m:[1;31m144[0m
+[0m--- 0x42027c24: [0;33mlv_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m70[0m
+[0m--- 0x4201ab95: [0;33mbuf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m563[0m
+[0m--- 0x4201ae07: [0;33mdraw_buf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m652[0m
+[0m--- (inlined by) [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m269[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4202756e: [0;33msearch_suitable_block[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m566[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m769[0m
+[0m--- 0x42027927: [0;33mlv_tlsf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m1101[0m
+[0m--- 0x42025a28: [0;33mlv_malloc_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_mem_core_builtin.c[0m[0m:[1;31m144[0m
+[0m--- 0x42027c24: [0;33mlv_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m70[0m
+[0m--- 0x4201ab95: [0;33mbuf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m563[0m
+[0m--- 0x4201ae07: [0;33mdraw_buf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m652[0m
+[0m--- (inlined by) [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m269[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42027c45: [0;33mlv_memzero[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_string.h[0m[0m:[1;31m75[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m113[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m92[0m
+[0m--- 0x4201ad92: [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m259[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x420275ba: [0;33mblock_locate_free[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m773[0m
+[0m--- 0x42027927: [0;33mlv_tlsf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m1101[0m
+[0m--- 0x42025a28: [0;33mlv_malloc_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_mem_core_builtin.c[0m[0m:[1;31m144[0m
+[0m--- 0x42027c3a: [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m100[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m92[0m
+[0m--- 0x4201ad92: [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m259[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42025a25: [0;33mlv_malloc_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_mem_core_builtin.c[0m[0m:[1;31m144[0m
+[0m--- 0x42027c24: [0;33mlv_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m70[0m
+[0m--- 0x4201ab95: [0;33mbuf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m563[0m
+[0m--- 0x4201ae07: [0;33mdraw_buf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m652[0m
+[0m--- (inlined by) [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m269[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4202741b: [0;33mremove_free_block[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m592[0m
+[0m--- 0x420275de: [0;33mblock_locate_free[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m775[0m
+[0m--- 0x42027927: [0;33mlv_tlsf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m1101[0m
+[0m--- 0x42025a28: [0;33mlv_malloc_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_mem_core_builtin.c[0m[0m:[1;31m144[0m
+[0m--- 0x42027c3a: [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m100[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m92[0m
+[0m--- 0x4201ad92: [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m259[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400570d4: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x42027227: [0;33mlv_memset[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_string_builtin.c[0m[0m:[1;31m143[0m
+[0m--- 0x42027c45: [0;33mlv_memzero[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_string.h[0m[0m:[1;31m75[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m113[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m92[0m
+[0m--- 0x4201ad92: [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m259[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400570d4: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x42027227: [0;33mlv_memset[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_string_builtin.c[0m[0m:[1;31m143[0m
+[0m--- 0x42027c45: [0;33mlv_memzero[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_string.h[0m[0m:[1;31m75[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m113[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m92[0m
+[0m--- 0x4201ad92: [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m259[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4202741b: [0;33mremove_free_block[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m592[0m
+[0m--- 0x420275de: [0;33mblock_locate_free[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m775[0m
+[0m--- 0x42027927: [0;33mlv_tlsf_malloc[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_tlsf.c[0m[0m:[1;31m1101[0m
+[0m--- 0x42025a28: [0;33mlv_malloc_core[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_mem_core_builtin.c[0m[0m:[1;31m144[0m
+[0m--- 0x42027c3a: [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m100[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m92[0m
+[0m--- 0x4201ad92: [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m259[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[0m--- 0x4205de9e: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40377931: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/mark1/esp/v5.2.6/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400570d4: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x42027227: [0;33mlv_memset[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/builtin/lv_string_builtin.c[0m[0m:[1;31m143[0m
+[0m--- 0x42027c45: [0;33mlv_memzero[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_string.h[0m[0m:[1;31m75[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m113[0m
+[0m--- (inlined by) [0;33mlv_malloc_zeroed[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/stdlib/lv_mem.c[0m[0m:[1;31m92[0m
+[0m--- 0x4201ad92: [0;33mlv_draw_buf_create_ex[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m259[0m
+[0m--- 0x4201ae59: [0;33mlv_draw_buf_create[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw_buf.c[0m[0m:[1;31m252[0m
+[0m--- 0x4201aad1: [0;33mlv_draw_layer_alloc_buf[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m501[0m
+[0m--- 0x4203a69b: [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m322[0m
+[0m--- (inlined by) [0;33mdispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw.c[0m[0m:[1;31m250[0m
+[0m--- 0x4201a72d: [0;33mlv_draw_dispatch_layer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m284[0m
+[0m--- 0x4201a756: [0;33mlv_draw_dispatch[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/draw/lv_draw.c[0m[0m:[1;31m222[0m
+[0m--- 0x42018033: [0;33mdraw_buf_flush[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m1367[0m
+[0m--- 0x4201937d: [0;33mrefr_invalid_areas[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m801[0m
+[0m--- (inlined by) [0;33mlv_display_refr_timer[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m413[0m
+[0m--- 0x420256e2: [0;33mlv_timer_exec[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m327[0m
+[0m--- (inlined by) [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m107[0m
+[0m--- 0x42025835: [0;33mlv_timer_handler[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/lvgl__lvgl/src/misc/lv_timer.c[0m[0m:[1;31m71[0m
+[0m--- 0x4200f279: [0;33mlvgl_port_task[0m[0m at [0;32mC:/Users/mark1/Desktop/Touch-Knob-Belom/managed_components/espressif__esp_lvgl_port/src/lvgl9/esp_lvgl_port.c[0m[0m:[1;31m239[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Users\mark1\esp\v5.2.6\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

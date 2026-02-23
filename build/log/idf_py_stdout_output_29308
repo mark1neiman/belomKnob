@@ -1,0 +1,23 @@
+[0/1] Re-running CMake...
+-- Component directory C:/Users/mark1/esp/v5.2.6/esp-idf/components/esp_vfs_console does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "lvgl/lvgl": "9.4.0" -> "9.5.0"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 9 dependencies:
+NOTICE: [1/9] espressif/button (3.3.1)
+NOTICE: [2/9] espressif/cmake_utilities (0.5.3)
+NOTICE: [3/9] espressif/esp_lcd_sh8601 (1.0.0)
+NOTICE: [4/9] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [5/9] espressif/esp_lvgl_port (2.7.1)
+NOTICE: [6/9] espressif/knob (1.0.0)
+NOTICE: [7/9] espressif/led_strip (2.5.5)
+NOTICE: [8/9] lvgl/lvgl (9.4.0)
+NOTICE: [9/9] idf (5.2.6)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+C:\Users\mark1\.espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SC:\Users\mark1\Desktop\Touch-Knob-Belom -BC:\Users\mark1\Desktop\Touch-Knob-Belom\build

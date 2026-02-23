@@ -1,0 +1,2 @@
+warning: the value '0x40' is invalid for SOC_CPU_WATCHPOINT_MAX_REGION_SIZE (defined at C:/Users/mark1/esp/v5.2.6/esp-idf\./components/soc/esp32s3/include/soc/Kconfig.soc_caps.in:378), which has type int -- assignment ignored
+C:\Users\mark1\AppData\Local\Temp\kconfgen_tmpejrserfs:209: warning: '1' is not a valid value for the bool symbol SOC_SDM_GROUPS (defined at C:/Users/mark1/esp/v5.2.6/esp-idf\./components/soc/esp32s3/include/soc/Kconfig.soc_caps.in:766). Assignment ignored.
