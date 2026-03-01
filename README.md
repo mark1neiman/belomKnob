@@ -267,3 +267,5 @@ Touch подключен по **I2C (I2C_NUM_0)**:
 | 1 клик | Lock / Unlock |
 | 3 клика | Settings |
 | Долгий клик | Назад |
+
+# belomKnob

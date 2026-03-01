@@ -31612,6 +31612,16 @@
                                         "children": [],
                                         "depends_on": "LV_USE_DRAW_SW",
                                         "help": null,
+                                        "id": "LV_DRAW_SW_SUPPORT_RGB565_SWAPPED",
+                                        "name": "LV_DRAW_SW_SUPPORT_RGB565_SWAPPED",
+                                        "range": null,
+                                        "title": "Enable support for RGB565 swapped color format",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_DRAW_SW",
+                                        "help": null,
                                         "id": "LV_DRAW_SW_SUPPORT_RGB565A8",
                                         "name": "LV_DRAW_SW_SUPPORT_RGB565A8",
                                         "range": null,
@@ -31821,6 +31831,16 @@
                                         "name": "LV_DRAW_SW_ASM_HELIUM",
                                         "range": null,
                                         "title": "2: HELIUM",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice LV_USE_DRAW_SW_ASM>",
+                                        "help": null,
+                                        "id": "LV_DRAW_SW_ASM_RISCV_V",
+                                        "name": "LV_DRAW_SW_ASM_RISCV_V",
+                                        "range": null,
+                                        "title": "3: RISC-V Vector",
                                         "type": "bool"
                                     },
                                     {
@@ -32059,6 +32079,16 @@
                                         "children": [],
                                         "depends_on": "LV_USE_DRAW_VG_LITE",
                                         "help": null,
+                                        "id": "LV_VG_LITE_BITMAP_FONT_CACHE_CNT",
+                                        "name": "LV_VG_LITE_BITMAP_FONT_CACHE_CNT",
+                                        "range": null,
+                                        "title": "VG-Lite unaligned bitmap font maximum cache number.",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_DRAW_VG_LITE",
+                                        "help": null,
                                         "id": "LV_VG_LITE_DISABLE_VLC_OP_CLOSE",
                                         "name": "LV_VG_LITE_DISABLE_VLC_OP_CLOSE",
                                         "range": null,
@@ -32074,6 +32104,26 @@
                                         "range": null,
                                         "title": "Disable linear gradient extension for some older versions of drivers.",
                                         "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_DRAW_VG_LITE",
+                                        "help": null,
+                                        "id": "LV_VG_LITE_DISABLE_BLIT_RECT_OFFSET",
+                                        "name": "LV_VG_LITE_DISABLE_BLIT_RECT_OFFSET",
+                                        "range": null,
+                                        "title": "Disable blit rectangular offset to resolve certain hardware errors.",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_DRAW_VG_LITE",
+                                        "help": null,
+                                        "id": "LV_VG_LITE_PATH_DUMP_MAX_LEN",
+                                        "name": "LV_VG_LITE_PATH_DUMP_MAX_LEN",
+                                        "range": null,
+                                        "title": "Maximum path dump print length (in points)",
+                                        "type": "int"
                                     }
                                 ],
                                 "depends_on": null,
@@ -32146,6 +32196,16 @@
                                         "range": null,
                                         "title": "Use Espressif's PPA accelerator for Image draw",
                                         "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_PPA",
+                                        "help": "PPA burst length size in bytes.",
+                                        "id": "LV_PPA_BURST_LENGTH",
+                                        "name": "LV_PPA_BURST_LENGTH",
+                                        "range": null,
+                                        "title": "PPA Burst length in bytes",
+                                        "type": "int"
                                     }
                                 ],
                                 "depends_on": null,
@@ -32186,6 +32246,87 @@
                                 "range": null,
                                 "title": "Use EVE FT81X GPU.",
                                 "type": "bool"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice LV_NANOVG_BACKEND>",
+                                                "help": null,
+                                                "id": "LV_NANOVG_BACKEND_GL2",
+                                                "name": "LV_NANOVG_BACKEND_GL2",
+                                                "range": null,
+                                                "title": "OpenGL 2.0",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice LV_NANOVG_BACKEND>",
+                                                "help": null,
+                                                "id": "LV_NANOVG_BACKEND_GL3",
+                                                "name": "LV_NANOVG_BACKEND_GL3",
+                                                "range": null,
+                                                "title": "OpenGL 3.0+",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice LV_NANOVG_BACKEND>",
+                                                "help": null,
+                                                "id": "LV_NANOVG_BACKEND_GLES2",
+                                                "name": "LV_NANOVG_BACKEND_GLES2",
+                                                "range": null,
+                                                "title": "OpenGL ES 2.0",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "<choice LV_NANOVG_BACKEND>",
+                                                "help": null,
+                                                "id": "LV_NANOVG_BACKEND_GLES3",
+                                                "name": "LV_NANOVG_BACKEND_GLES3",
+                                                "range": null,
+                                                "title": "OpenGL ES 3.0+",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "LV_USE_DRAW_NANOVG",
+                                        "help": "Select which OpenGL implementation to use for NanoVG rendering.",
+                                        "id": "component-config-lvgl-configuration-rendering-configuration-use-nanovg-renderer--nanovg-opengl-backend",
+                                        "name": "LV_NANOVG_BACKEND",
+                                        "title": "NanoVG OpenGL backend",
+                                        "type": "choice"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_DRAW_NANOVG",
+                                        "help": null,
+                                        "id": "LV_NANOVG_IMAGE_CACHE_CNT",
+                                        "name": "LV_NANOVG_IMAGE_CACHE_CNT",
+                                        "range": null,
+                                        "title": "Draw image texture cache count",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_DRAW_NANOVG",
+                                        "help": null,
+                                        "id": "LV_NANOVG_LETTER_CACHE_CNT",
+                                        "name": "LV_NANOVG_LETTER_CACHE_CNT",
+                                        "range": null,
+                                        "title": "Draw letter cache count",
+                                        "type": "int"
+                                    }
+                                ],
+                                "depends_on": "LV_USE_NANOVG && LV_USE_MATRIX",
+                                "help": null,
+                                "id": "LV_USE_DRAW_NANOVG",
+                                "name": "LV_USE_DRAW_NANOVG",
+                                "range": null,
+                                "title": "Use NanoVG Renderer.",
+                                "type": "bool"
                             }
                         ],
                         "depends_on": null,
@@ -32208,7 +32349,7 @@
                                                         "id": "LV_LOG_LEVEL_TRACE",
                                                         "name": "LV_LOG_LEVEL_TRACE",
                                                         "range": null,
-                                                        "title": "A lot of logs to give detailed information",
+                                                        "title": "LOG_LEVEL_TRACE: A lot of logs to give detailed information",
                                                         "type": "bool"
                                                     },
                                                     {
@@ -32218,7 +32359,7 @@
                                                         "id": "LV_LOG_LEVEL_INFO",
                                                         "name": "LV_LOG_LEVEL_INFO",
                                                         "range": null,
-                                                        "title": "Log important events",
+                                                        "title": "LOG_LEVEL_INFO: Log important events",
                                                         "type": "bool"
                                                     },
                                                     {
@@ -32228,7 +32369,7 @@
                                                         "id": "LV_LOG_LEVEL_WARN",
                                                         "name": "LV_LOG_LEVEL_WARN",
                                                         "range": null,
-                                                        "title": "Log if something unwanted happened but didn't cause a problem",
+                                                        "title": "LOG_LEVEL_WARN: Log if something unwanted happened but didn't cause a problem",
                                                         "type": "bool"
                                                     },
                                                     {
@@ -32238,7 +32379,7 @@
                                                         "id": "LV_LOG_LEVEL_ERROR",
                                                         "name": "LV_LOG_LEVEL_ERROR",
                                                         "range": null,
-                                                        "title": "Only critical issues, when the system may fail",
+                                                        "title": "LOG_LEVEL_ERROR: Only critical issues, when the system may fail",
                                                         "type": "bool"
                                                     },
                                                     {
@@ -32248,7 +32389,7 @@
                                                         "id": "LV_LOG_LEVEL_USER",
                                                         "name": "LV_LOG_LEVEL_USER",
                                                         "range": null,
-                                                        "title": "Only logs added by the user",
+                                                        "title": "LOG_LEVEL_USER: Only logs added by the user",
                                                         "type": "bool"
                                                     },
                                                     {
@@ -32258,7 +32399,7 @@
                                                         "id": "LV_LOG_LEVEL_NONE",
                                                         "name": "LV_LOG_LEVEL_NONE",
                                                         "range": null,
-                                                        "title": "Do not log anything",
+                                                        "title": "LOG_LEVEL_NONE: Do not log anything",
                                                         "type": "bool"
                                                     }
                                                 ],
@@ -32736,6 +32877,16 @@
                                         "name": "LV_USE_GESTURE_RECOGNITION",
                                         "range": null,
                                         "title": "Enable the multi-touch gesture recognition feature",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": null,
+                                        "help": "Enable this option to activate external data and destructor functionality,\nwhich assists in resource cleanup when objects are freed by either LVGL core\nor applications. Currently supported features include:\n        - event\n        - object\n        - observer\n        - anim\n        - timer\n        - group\n        - display\n        - indev (input device)\n        - theme",
+                                        "id": "LV_USE_EXT_DATA",
+                                        "name": "LV_USE_EXT_DATA",
+                                        "range": null,
+                                        "title": "External data and destructor",
                                         "type": "bool"
                                     }
                                 ],
@@ -34094,6 +34245,27 @@
                                 "range": null,
                                 "title": "Win",
                                 "type": "bool"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_3DTEXTURE",
+                                        "help": null,
+                                        "id": "LV_USE_GLTF",
+                                        "name": "LV_USE_GLTF",
+                                        "range": null,
+                                        "title": "glTF support",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "LV_USE_DRAW_OPENGLES",
+                                "help": null,
+                                "id": "LV_USE_3DTEXTURE",
+                                "name": "LV_USE_3DTEXTURE",
+                                "range": null,
+                                "title": "3D Texture",
+                                "type": "bool"
                             }
                         ],
                         "depends_on": null,
@@ -34581,6 +34753,16 @@
                                 "type": "bool"
                             },
                             {
+                                "children": [],
+                                "depends_on": null,
+                                "help": null,
+                                "id": "LV_USE_LIBWEBP",
+                                "name": "LV_USE_LIBWEBP",
+                                "range": null,
+                                "title": "WebP decoder library",
+                                "type": "bool"
+                            },
+                            {
                                 "children": [
                                     {
                                         "children": [],
@@ -34783,6 +34965,16 @@
                                 "name": "LV_USE_THORVG",
                                 "range": null,
                                 "title": "ThorVG library",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": null,
+                                "id": "LV_USE_NANOVG",
+                                "name": "LV_USE_NANOVG",
+                                "range": null,
+                                "title": "NanoVG library",
                                 "type": "bool"
                             },
                             {
@@ -35480,16 +35672,6 @@
                                 "children": [],
                                 "depends_on": null,
                                 "help": null,
-                                "id": "LV_USE_XML",
-                                "name": "LV_USE_XML",
-                                "range": null,
-                                "title": "Enable loading XML UIs runtime",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": null,
                                 "id": "LV_USE_COLOR_FILTER",
                                 "name": "LV_USE_COLOR_FILTER",
                                 "range": null,
@@ -35792,70 +35974,10 @@
                                         "children": [],
                                         "depends_on": "LV_USE_WAYLAND",
                                         "help": null,
-                                        "id": "LV_WAYLAND_WINDOW_DECORATIONS",
-                                        "name": "LV_WAYLAND_WINDOW_DECORATIONS",
+                                        "id": "LV_WAYLAND_DIRECT_EXIT",
+                                        "name": "LV_WAYLAND_DIRECT_EXIT",
                                         "range": null,
-                                        "title": "Draw client side window decorations, only necessary on Mutter (GNOME)",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "LV_USE_WAYLAND",
-                                        "help": null,
-                                        "id": "LV_WAYLAND_BUF_COUNT",
-                                        "name": "LV_WAYLAND_BUF_COUNT",
-                                        "range": null,
-                                        "title": "Use 1 for single buffer with partial render mode or 2 for double buffer with full render mode",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [
-                                            {
-                                                "children": [],
-                                                "depends_on": "!LV_WAYLAND_USE_DMABUF && <choice>",
-                                                "help": null,
-                                                "id": "LV_WAYLAND_RENDER_MODE_PARTIAL",
-                                                "name": "LV_WAYLAND_RENDER_MODE_PARTIAL",
-                                                "range": null,
-                                                "title": "Use the buffer(s) to render the screen is smaller parts",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "LV_WAYLAND_USE_DMABUF && <choice>",
-                                                "help": null,
-                                                "id": "LV_WAYLAND_RENDER_MODE_DIRECT",
-                                                "name": "LV_WAYLAND_RENDER_MODE_DIRECT",
-                                                "range": null,
-                                                "title": "Only the changed areas will be updated with 2 screen sized buffers",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "LV_WAYLAND_USE_DMABUF && <choice>",
-                                                "help": null,
-                                                "id": "LV_WAYLAND_RENDER_MODE_FULL",
-                                                "name": "LV_WAYLAND_RENDER_MODE_FULL",
-                                                "range": null,
-                                                "title": "Always redraw the whole screen even if only one pixel has been changed with 2 screen sized buffers",
-                                                "type": "bool"
-                                            }
-                                        ],
-                                        "depends_on": "LV_USE_WAYLAND",
-                                        "help": null,
-                                        "id": "component-config-lvgl-configuration-devices-use-the-wayland-client-to-open-a-window-and-handle-inputs-on-linux-or-bsd-wayland-rendering-mode",
-                                        "name": null,
-                                        "title": "Wayland rendering mode",
-                                        "type": "choice"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "LV_USE_WAYLAND && LV_USE_G2D",
-                                        "help": null,
-                                        "id": "LV_WAYLAND_USE_DMABUF",
-                                        "name": "LV_WAYLAND_USE_DMABUF",
-                                        "range": null,
-                                        "title": "Use DMA buffers for frame buffers",
+                                        "title": "Deinitialize LVGL and quit the application when the last wayland window closes",
                                         "type": "bool"
                                     }
                                 ],
@@ -36421,7 +36543,7 @@
                                         "type": "bool"
                                     }
                                 ],
-                                "depends_on": null,
+                                "depends_on": "LV_USE_MATRIX",
                                 "help": null,
                                 "id": "LV_USE_OPENGLES",
                                 "name": "LV_USE_OPENGLES",
@@ -36522,30 +36644,10 @@
                                         "children": [],
                                         "depends_on": "LV_BUILD_DEMOS",
                                         "help": null,
-                                        "id": "LV_USE_DEMO_SCROLL",
-                                        "name": "LV_USE_DEMO_SCROLL",
-                                        "range": null,
-                                        "title": "Scroll settings test for LVGL",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "LV_BUILD_DEMOS",
-                                        "help": null,
                                         "id": "LV_USE_DEMO_STRESS",
                                         "name": "LV_USE_DEMO_STRESS",
                                         "range": null,
                                         "title": "Stress test for LVGL",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "LV_FONT_MONTSERRAT_18 && LV_BUILD_DEMOS",
-                                        "help": null,
-                                        "id": "LV_USE_DEMO_TRANSFORM",
-                                        "name": "LV_USE_DEMO_TRANSFORM",
-                                        "range": null,
-                                        "title": "Transform test for LVGL",
                                         "type": "bool"
                                     },
                                     {
@@ -36637,6 +36739,16 @@
                                         "name": "LV_USE_DEMO_VECTOR_GRAPHIC",
                                         "range": null,
                                         "title": "vector graphic demo",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "LV_USE_GLTF && LV_BUILD_DEMOS",
+                                        "help": null,
+                                        "id": "LV_USE_DEMO_GLTF",
+                                        "name": "LV_USE_DEMO_GLTF",
+                                        "range": null,
+                                        "title": "glTF demo",
                                         "type": "bool"
                                     },
                                     {

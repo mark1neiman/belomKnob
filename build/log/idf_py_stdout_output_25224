@@ -1,5 +1,5 @@
 [1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\mark1\Desktop\Touch-Knob-Belom\build\esp-idf\esptool_py && C:\Users\mark1\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mark1/esp/v5.2.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/mark1/Desktop/Touch-Knob-Belom/build/partition_table/partition-table.bin C:/Users/mark1/Desktop/Touch-Knob-Belom/build/viewe_knob_touch.bin"
-viewe_knob_touch.bin binary size 0xc15c0 bytes. Smallest app partition is 0x300000 bytes. 0x23ea40 bytes (75%) free.
+viewe_knob_touch.bin binary size 0x14f020 bytes. Smallest app partition is 0x300000 bytes. 0x1b0fe0 bytes (56%) free.
 [2/5] Performing build step for 'bootloader'
 [1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\mark1\Desktop\Touch-Knob-Belom\build\bootloader\esp-idf\esptool_py && C:\Users\mark1\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mark1/esp/v5.2.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/mark1/Desktop/Touch-Knob-Belom/build/bootloader/bootloader.bin"
 Bootloader binary size 0x5a40 bytes. 0x25c0 bytes (29%) free.
@@ -9,7 +9,7 @@ Bootloader binary size 0x5a40 bytes. 0x25c0 bytes (29%) free.
 esptool.py --chip esp32s3 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 viewe_knob_touch.bin 0x8000 partition_table/partition-table.bin
 esptool.py v4.11.0
 Serial port COM5
-Connecting....
+Connecting...
 Chip is ESP32-S3 (QFN56) (revision v0.2)
 Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
 Crystal is 40MHz
@@ -21,48 +21,55 @@ Changing baud rate to 460800
 Changed.
 Configuring flash size...
 Flash will be erased from 0x00000000 to 0x00005fff...
-Flash will be erased from 0x00010000 to 0x000d1fff...
+Flash will be erased from 0x00010000 to 0x0015ffff...
 Flash will be erased from 0x00008000 to 0x00008fff...
 SHA digest in image updated
 Compressed 23104 bytes to 14185...
 Writing at 0x00000000... (100 %)
-Wrote 23104 bytes (14185 compressed) at 0x00000000 in 0.8 seconds (effective 239.9 kbit/s)...
+Wrote 23104 bytes (14185 compressed) at 0x00000000 in 0.8 seconds (effective 232.0 kbit/s)...
 Hash of data verified.
-Compressed 792000 bytes to 469330...
-Writing at 0x00010000... (3 %)
-Writing at 0x0001d0aa... (6 %)
-Writing at 0x00026ed3... (10 %)
-Writing at 0x0002f431... (13 %)
-Writing at 0x000387e7... (17 %)
-Writing at 0x00043ca4... (20 %)
-Writing at 0x000506fd... (24 %)
-Writing at 0x0005656c... (27 %)
-Writing at 0x0005bba9... (31 %)
-Writing at 0x000614ec... (34 %)
-Writing at 0x000668e9... (37 %)
-Writing at 0x0006b864... (41 %)
-Writing at 0x00070b96... (44 %)
-Writing at 0x00076da5... (48 %)
-Writing at 0x0007bcea... (51 %)
-Writing at 0x00080e1f... (55 %)
-Writing at 0x00086098... (58 %)
-Writing at 0x0008b064... (62 %)
-Writing at 0x00090a99... (65 %)
-Writing at 0x0009705c... (68 %)
-Writing at 0x0009cf3d... (72 %)
-Writing at 0x000a289f... (75 %)
-Writing at 0x000a898e... (79 %)
-Writing at 0x000ae303... (82 %)
-Writing at 0x000b47c7... (86 %)
-Writing at 0x000bc5a3... (89 %)
-Writing at 0x000c1f7a... (93 %)
-Writing at 0x000c77dd... (96 %)
-Writing at 0x000cd927... (100 %)
-Wrote 792000 bytes (469330 compressed) at 0x00010000 in 11.1 seconds (effective 572.6 kbit/s)...
+Compressed 1372192 bytes to 587688...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c1ce... (5 %)
+Writing at 0x0004c0a2... (8 %)
+Writing at 0x000646b9... (11 %)
+Writing at 0x00078478... (13 %)
+Writing at 0x0008baf8... (16 %)
+Writing at 0x00094038... (19 %)
+Writing at 0x0009d82f... (22 %)
+Writing at 0x000aa8d1... (25 %)
+Writing at 0x000b878c... (27 %)
+Writing at 0x000c9faa... (30 %)
+Writing at 0x000d0280... (33 %)
+Writing at 0x000d61c3... (36 %)
+Writing at 0x000db9b8... (38 %)
+Writing at 0x000e1940... (41 %)
+Writing at 0x000e72f7... (44 %)
+Writing at 0x000ecbd3... (47 %)
+Writing at 0x000f2194... (50 %)
+Writing at 0x000f7090... (52 %)
+Writing at 0x000fc342... (55 %)
+Writing at 0x00102589... (58 %)
+Writing at 0x0010765c... (61 %)
+Writing at 0x0010c85e... (63 %)
+Writing at 0x00111b34... (66 %)
+Writing at 0x00116fa5... (69 %)
+Writing at 0x0011bf36... (72 %)
+Writing at 0x00121d0d... (75 %)
+Writing at 0x00128934... (77 %)
+Writing at 0x0012e822... (80 %)
+Writing at 0x00134acc... (83 %)
+Writing at 0x0013a924... (86 %)
+Writing at 0x001400da... (88 %)
+Writing at 0x00145a78... (91 %)
+Writing at 0x0014e35f... (94 %)
+Writing at 0x00153ddc... (97 %)
+Writing at 0x00159bac... (100 %)
+Wrote 1372192 bytes (587688 compressed) at 0x00010000 in 16.2 seconds (effective 679.4 kbit/s)...
 Hash of data verified.
 Compressed 3072 bytes to 105...
 Writing at 0x00008000... (100 %)
-Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 254.1 kbit/s)...
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 292.9 kbit/s)...
 Hash of data verified.
 
 Leaving...

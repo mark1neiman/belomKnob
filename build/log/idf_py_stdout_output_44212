@@ -1,0 +1,12 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\mark1\Desktop\Touch-Knob-Belom\build\bootloader\esp-idf\esptool_py && C:\Users\mark1\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mark1/esp/v5.2.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/mark1/Desktop/Touch-Knob-Belom/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5a40 bytes. 0x25c0 bytes (29%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Users/mark1/Desktop/Touch-Knob-Belom/main/main.c:493:
+C:/Users/mark1/Desktop/Touch-Knob-Belom/main/ui/screens/settings/wheel_layout.inc: In function 'update_settings_wheel_layout':
+C:/Users/mark1/Desktop/Touch-Knob-Belom/main/ui/screens/settings/wheel_layout.inc:196:15: warning: variable 'normalized_dist' set but not used [-Wunused-but-set-variable]
+  196 |         float normalized_dist = 1.0f;
+      |               ^~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a

@@ -13,7 +13,7 @@ dependencies:
 
   lvgl/lvgl:
     public: true
-    version: "^9"
+    version: "==9.5.0"
     
   espressif/knob:
     version: "==1.0.0"

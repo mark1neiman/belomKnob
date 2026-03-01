@@ -1,0 +1,18 @@
+C:\Users\mark1\AppData\Local\Temp\kconfgen_tmpwivhemgi:1: warning: ignoring malformed line '\ufeff# This file was generated using idf.py save-defconfig. It can be edited manually.'
+C:\Users\mark1\AppData\Local\Temp\kconfgen_tmpcv7f9fmd:1: warning: ignoring malformed line '\ufeff# This file was generated using idf.py save-defconfig. It can be edited manually.'
+C:\Users\mark1\AppData\Local\Temp\kconfgen_tmptck3wk5l:1: warning: ignoring malformed line '\ufeff#'
+Traceback (most recent call last):
+  File "C:\Users\mark1\esp\v5.2.6\esp-idf\components\esp_rom\gen_gdbinit.py", line 72, in <module>
+    gdbinit_lines = generate_gdbinit_rom_add_symbols(target)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mark1\esp\v5.2.6\esp-idf\components\esp_rom\gen_gdbinit.py", line 32, in generate_gdbinit_rom_add_symbols
+    raise EnvironmentError(
+OSError: ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.
+CMake Warning at C:/Users/mark1/esp/v5.2.6/esp-idf/tools/cmake/gdbinit.cmake:52 (message):
+  Error while generating esp_rom gdbinit
+Call Stack (most recent call first):
+  C:/Users/mark1/esp/v5.2.6/esp-idf/tools/cmake/project.cmake:298 (__generate_gdbinit)
+  C:/Users/mark1/esp/v5.2.6/esp-idf/tools/cmake/project.cmake:818 (__project_info)
+  CMakeLists.txt:9 (project)
+
+

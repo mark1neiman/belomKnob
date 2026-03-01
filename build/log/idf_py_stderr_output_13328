@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "C:\Users\mark1\esp\v5.2.6\esp-idf\components\esp_rom\gen_gdbinit.py", line 72, in <module>
+    gdbinit_lines = generate_gdbinit_rom_add_symbols(target)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mark1\esp\v5.2.6\esp-idf\components\esp_rom\gen_gdbinit.py", line 32, in generate_gdbinit_rom_add_symbols
+    raise EnvironmentError(
+OSError: ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.
+CMake Warning at C:/Users/mark1/esp/v5.2.6/esp-idf/tools/cmake/gdbinit.cmake:52 (message):
+  Error while generating esp_rom gdbinit
+Call Stack (most recent call first):
+  C:/Users/mark1/esp/v5.2.6/esp-idf/tools/cmake/project.cmake:298 (__generate_gdbinit)
+  C:/Users/mark1/esp/v5.2.6/esp-idf/tools/cmake/project.cmake:818 (__project_info)
+  CMakeLists.txt:9 (project)
+
+
+CMake Error:
+  Running
+
+   'C:/Users/mark1/.espressif/tools/ninja/1.12.1/ninja.exe' '-C' 'C:/Users/mark1/Desktop/Touch-Knob-Belom/build' '-t' 'recompact'
+
+  failed with:
+
+   ninja: error: failed recompaction: Permission denied
+
+
+
+CMake Error:
+  Running
+
+   'C:/Users/mark1/.espressif/tools/ninja/1.12.1/ninja.exe' '-C' 'C:/Users/mark1/Desktop/Touch-Knob-Belom/build' '-t' 'restat' 'build.ninja'
+
+  failed with:
+
+   ninja: error: failed recompaction: Permission denied
+
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
