@@ -623,7 +623,6 @@ static void fps_display_refr_event_cb(lv_event_t *e);
 static void settings_update_blur_layers(void);
 static void update_settings_wheel_layout(void);
 static void settings_sync_root_scroll_to_index(void);
-static void settings_start_root_scroll_anim(void);
 static int settings_get_item_count(void);
 static lv_color_t ui_theme_bg_color(void);
 static int clamp_int(int value, int min_value, int max_value);

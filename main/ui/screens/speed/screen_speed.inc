@@ -57,6 +57,7 @@ static void create_main_screen(void)
     lv_obj_set_style_text_font(label_filter_status, &lv_font_inter_medium_22_ui, 0);
     lv_obj_set_style_text_color(label_filter_status, lv_color_hex(UI_FILTER_GOOD_HEX), 0);
     lv_obj_set_style_text_letter_space(label_filter_status, 1, 0);
+    lv_obj_set_style_translate_y(label_filter_status, -3, 0);
     lv_label_set_text(label_filter_status, ui_tr("FILTER", "ФИЛЬТР"));
 
     lock_overlay = NULL;

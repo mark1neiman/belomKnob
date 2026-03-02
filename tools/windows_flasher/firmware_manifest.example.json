@@ -1,0 +1,31 @@
+{
+  "channel": "stable",
+  "latest": "2.2.1",
+  "base_url": "https://admin.belom.eu/wp-json/belom-flasher/v1/download/",
+  "firmwares": [
+    {
+      "version": "2.2.1",
+      "chip": "esp32s3",
+      "images": [
+        {
+          "name": "bootloader",
+          "offset": "0x0",
+          "url": "bootloader.bin",
+          "sha256": "PUT_BOOTLOADER_SHA256_HERE"
+        },
+        {
+          "name": "partition-table",
+          "offset": "0x8000",
+          "url": "partition-table.bin",
+          "sha256": "PUT_PARTITION_SHA256_HERE"
+        },
+        {
+          "name": "app",
+          "offset": "0x10000",
+          "url": "viewe_knob_touch.bin",
+          "sha256": "PUT_APP_SHA256_HERE"
+        }
+      ]
+    }
+  ]
+}

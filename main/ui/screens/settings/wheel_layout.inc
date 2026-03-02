@@ -1716,7 +1716,6 @@ static bool settings_v2_render_layout(void)
     lv_obj_align(settings_v2_center_title, LV_ALIGN_CENTER, 0, swatch ? 86 : 94);
 
     lv_label_set_text(settings_v2_center_value, swatch ? "" : value);
-    bool language_value_i18n = (!swatch && settings_view == SETTINGS_VIEW_ROOT && active == 4);
     lv_obj_set_style_text_font(settings_v2_center_value, &lv_font_inter_medium_22_ui, 0);
     lv_obj_set_style_text_color(settings_v2_center_value, center_value_color, 0);
     lv_obj_align(settings_v2_center_value, LV_ALIGN_CENTER, 0, swatch ? 122 : 130);
@@ -1915,34 +1914,6 @@ static void settings_sync_root_scroll_to_index(void)
     settings_root_scroll_animating = false;
     settings_root_scroll_q = settings_index_to_scroll_q_for_view(settings_index, settings_view);
     settings_root_scroll_last_draw_q = INT32_MIN;
-}
-
-static void settings_start_root_scroll_anim(void)
-{
-    ui_mark_activity();
-
-    int32_t target = settings_index_to_scroll_q_for_view(settings_index, settings_view);
-    if (target == settings_root_scroll_q) {
-        update_settings_wheel_layout();
-        return;
-    }
-
-    lv_anim_delete(&settings_root_scroll_q, settings_root_scroll_anim_exec_cb);
-    settings_root_scroll_animating = true;
-
-    int32_t delta = target - settings_root_scroll_q;
-    (void)delta;
-    int anim_time = SETTINGS_V2_SLIDE_TIME_MS;
-
-    lv_anim_t a;
-    lv_anim_init(&a);
-    lv_anim_set_var(&a, &settings_root_scroll_q);
-    lv_anim_set_exec_cb(&a, settings_root_scroll_anim_exec_cb);
-    lv_anim_set_values(&a, settings_root_scroll_q, target);
-    lv_anim_set_time(&a, (uint32_t)anim_time);
-    lv_anim_set_path_cb(&a, lv_anim_path_ease_in_out);
-    lv_anim_set_ready_cb(&a, settings_root_scroll_anim_ready_cb);
-    lv_anim_start(&a);
 }
 
 static void fps_counter_create(void)
